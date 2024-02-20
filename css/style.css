@@ -1,0 +1,41 @@
+.topo {
+    background-color: var(--color-azul-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 136px;
+    font-family: var(--font-bold);
+    font-size: 3rem;
+}
+
+.topo__marca {
+    color: var(--color-preto)
+}
+
+.topo__titulo {
+    color: var(--color-azul-escuro);
+    padding-left: 8px;
+}
+
+.baixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    font-size: 1rem;
+    background-color: var(--color-azul-claro);
+    height: 144px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.fa-brands {
+    font-size: 3rem;
+    color: red;
+}
+
+.baixo_address {}
+
+.rodape__icones {
+    font-size: 1.25rem;
+}
