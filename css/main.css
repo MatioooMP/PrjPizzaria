@@ -13,11 +13,10 @@
     src: url(./../fontes/Inter-Regular.ttf);
 }
 
-:root{
+:root {
     --font-bold: "Inter Bold";
     --font-regular: "Inter Regular";
     --font-light: "Inter Light";
-    
     --color-preto: #000;
     --color-branco: #fff;
     --color-cinza-claro: #eee;
@@ -26,6 +25,6 @@
     --color-danger: #e92929;
     --color-azul-claro: #e5f4ff;
     --color-azul-escuro: #1298f8;
-
-
+    --color-azul-mt-escuro: #0d74be;
+    font-size: 16px;
 }
