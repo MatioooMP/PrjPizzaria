@@ -93,16 +93,21 @@
 .modal {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: px;
+    align-items: center;
+    width: 672px;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+    padding: 64px;
+    gap: 64px;
+    background-color: rgb(255, 208, 211);
+    border-radius: 35px;
 }
 
 .modal__detalhes {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 46px;
-    flex-wrap: wrap;
+    gap: 25px;
+    padding: 16px;
 }
 
 .modal__titulo {
@@ -113,16 +118,98 @@
 .modal__descricao {
     font-size: 16px;
     font-family: var(--font-light);
+    line-height: 24px;
 }
 
 .modal__tamanho-area {
     background-color: #eeeeee;
-    border-radius: 16px 0px 0px 16px;
+    border-radius: 16px;
+    display: flex;
     align-items: center;
-    font-size: 24px;
+    height: 56px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.modal__tamanho-area button {
+    padding: 16px;
+}
+
+.modal__tamanho-area button:hover {
+    background-color: var(--color-azul-mt-escuro);
 }
 
 .modal__img {
-    width: 328px;
+    width: 100%;
     min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__texto {}
+
+.modal__controle-unidade {
+    background-color: #eeeeee;
+    border-radius: 16px;
+    width: 162px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.modal__controle-unidade button {
+    padding: 16px 34px;
+}
+
+.modal__controle-unidade button:hover {
+    background-color: var(--color-cinza-escuro);
+}
+
+.botao-verde {
+    background-color: #48D05F;
+    border-radius: 20px;
+    padding: 16px 32px 16px 32px;
+}
+
+.botao-verde:hover {
+    background-color: seagreen;
+}
+
+.botao-vermelho {
+    background-color: #E92929;
+    border-radius: 20px;
+    padding: 16px 32px 16px 32px;
+}
+
+.botao-vermelho:hover {
+    background-color: rgb(70, 8, 8)
+}
+
+.modal__btns-area {
+    display: flex;
+    gap: 16px;
+}
+
+.light-peso {
+    font-family: var(--font-light);
+    font-size: 16px;
+}
+
+.bold-tamanho {
+    font-family: var(--font-bold);
+    font-size: 20px;
+}
+
+.modal__preco-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.modal__texto-quant {
+    padding: 15px;
 }
