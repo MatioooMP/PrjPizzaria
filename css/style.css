@@ -213,3 +213,89 @@
 .modal__texto-quant {
     padding: 15px;
 }
+
+
+/*CARRINHO*/
+
+.carrinho {
+    display: flex;
+}
+
+.carrinho__detalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.carrinho__itens {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.carrinho__titulo {
+    font-family: var(--font-bold);
+    padding: 16px;
+}
+
+.carrinho__img {
+    width: 100px;
+}
+
+.carrinho__img img {
+    width: 100%;
+}
+
+.carrinho__texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinho__controle-unidade {
+    background-color: #eeeeee;
+    border-radius: 16px;
+    width: 162px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.carrinho__controle-unidade button {
+    padding: 16px 34px;
+}
+
+.carrinho__controle-unidade button:hover {
+    background-color: var(--color-cinza-escuro);
+}
+
+.carrinho__valor {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinho__valor-subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carrinho__valor-desconto {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carrinho__valor-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.carrinho__botao-finalizar {
+    background-color: #48D05F;
+    border-radius: 20px;
+    padding: 16px 32px 16px 32px;
+}
