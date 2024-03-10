@@ -219,28 +219,36 @@
 
 .carrinho {
     display: flex;
+    border-style: solid;
+    border-width: 1px;
+    width: fit-content;
+    padding: 16px;
+    background-color: var(--color-azul-claro);
 }
 
 .carrinho__detalhes {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    width: 504px;
+    height: 1016px;
+    gap:10px;
 }
 
 .carrinho__itens {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
 }
 
 .carrinho__titulo {
     font-family: var(--font-bold);
     padding: 16px;
+    font-size: 28px;
 }
 
 .carrinho__img {
     width: 100px;
+    padding: 24px;
 }
 
 .carrinho__img img {
@@ -250,6 +258,10 @@
 .carrinho__texto {
     display: flex;
     flex-direction: column;
+    font-family: var(--font-light);
+    font-size: 16px;
+    gap: 8px;
+    padding-right: 32px;
 }
 
 .carrinho__controle-unidade {
@@ -263,6 +275,10 @@
     overflow: hidden;
 }
 
+.carrinho__texto-quant{
+    font-family: var(--font-bold);
+    font-size: 20px;
+}
 .carrinho__controle-unidade button {
     padding: 16px 34px;
 }
@@ -279,23 +295,54 @@
 .carrinho__valor-subtotal {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 24px 16px 24px 16px;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    color: var(--color-azul-mt-escuro);
 }
 
 .carrinho__valor-desconto {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 24px 16px 24px 16px;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    color: var(--color-azul-mt-escuro);
 }
+
 
 .carrinho__valor-total {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 24px 16px 24px 16px;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    color: var(--color-azul-mt-escuro);
 }
 
 .carrinho__botao-finalizar {
     background-color: #48D05F;
     border-radius: 20px;
     padding: 16px 32px 16px 32px;
+    font-family: var(--font-light);
+    color: white;
+    font-size: 20px;
+}
+
+.carrinho__valor-preco{
+    font-family: var(--font-bold);
+    font-size: 28px;
+    color: black;
+}
+
+.carrinho__valor-subtitulo{
+    font-family: var(--font-bold);
+    color: var(--color-azul-escuro);
+    font-size: 28px;
+}
+
+.carrinho__valor-dinheiro{
+    font-family: var(--font-light);
+    font-size: 24px;
+    color: black;
 }
