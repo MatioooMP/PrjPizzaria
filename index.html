@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="./imagens/favicon-16x16.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fb20c9d156.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -127,49 +128,52 @@
         </div>
         <span> Desenvolvido por Matiooo</span>
     </footer>
+    <div class="bkg-modal">
 
-    <div class="modal">
-        <div class="modal__img">
-            <img src="./imagens/img-produto01.png" alt="Imagem da Pizza Muçarela">
-        </div>
-
-        <div class="modal__detalhes">
-            <span class="modal__titulo">Muçarela</span>
-            <p class="modal__descricao"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, tenetur
-                necessitatibus! Hic quibusdam ut at, aspernatur deleniti qui placeat iusto atque libero blanditiis
-                dolorum, quaerat recusandae eveniet nulla minus quas.</p>
-
-            <span class="modal__texto">Tamanho</span>
-            <div class="modal__tamanho-area">
-                <button>
-                    <span class="modal__texto bold-tamanho">Pequena</span>
-                    <span class="modal__texto light-peso">320g</span>
-                </button>
-                <button>
-                    <span class="modal__texto bold-tamanho">Média</span>
-                    <span class="modal__texto light-peso">530g</span>
-                </button>
-                <button>
-                    <span class="modal__texto bold-tamanho">Grande</span>
-                    <span class="modal__texto light-peso">860g</span>
-                </button>
+        <div class="modal">
+            <div class="modal__img">
+                <img src="./imagens/img-produto01.png" alt="Imagem da Pizza Muçarela">
             </div>
-            <span class="modal__texto">Preço</span>
-            <div class="modal__preco-area">
-                <span class="modal__texto">R$ 99,99</span>
-                <div class="modal__controle-unidade">
-                    <button><i class="fa-solid fa-plus"></i></button>
-                    <span class="modal__texto-quant">1 </span>
-                    <button><i class="fa-solid fa-minus"></i></button>
+
+            <div class="modal__detalhes">
+                <span class="modal__titulo">Muçarela</span>
+                <p class="modal__descricao"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur,
+                    tenetur
+                    necessitatibus! Hic quibusdam ut at, aspernatur deleniti qui placeat iusto atque libero blanditiis
+                    dolorum, quaerat recusandae eveniet nulla minus quas.</p>
+
+                <span class="modal__texto">Tamanho</span>
+                <div class="modal__tamanho-area">
+                    <button>
+                        <span class="modal__texto bold-tamanho">Pequena</span>
+                        <span class="modal__texto light-peso">320g</span>
+                    </button>
+                    <button>
+                        <span class="modal__texto bold-tamanho">Média</span>
+                        <span class="modal__texto light-peso">530g</span>
+                    </button>
+                    <button>
+                        <span class="modal__texto bold-tamanho">Grande</span>
+                        <span class="modal__texto light-peso">860g</span>
+                    </button>
                 </div>
-            </div>
-            <div class="modal__btns-area">
-                <button class="botao botao-verde">
-                    Adicionar ao carrinho
-                </button>
-                <button class="botao botao-vermelho">
-                    Cancelar
-                </button>
+                <span class="modal__texto">Preço</span>
+                <div class="modal__preco-area">
+                    <span class="modal__texto">R$ 99,99</span>
+                    <div class="modal__controle-unidade">
+                        <button class="add-pizza"><i class="fa-solid fa-plus"></i></button>
+                        <span class="modal__texto-quant">1 </span>
+                        <button><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+                <div class="modal__btns-area">
+                    <button class="botao botao-verde">
+                        Adicionar ao carrinho
+                    </button>
+                    <button class="botao botao-vermelho">
+                        Cancelar
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -219,13 +223,9 @@
                     <span class="carrinho__valor-subtitulo">Total</span>
                     <span class="carrinho__valor-preco">R$135,00</span>
                 </div>
-
             </div>
             <button class="carrinho__botao-finalizar">Finalizar compra</button>
-
-
         </div>
-
     </div>
 
 

@@ -102,6 +102,22 @@
     border-radius: 35px;
 }
 
+.bkg-modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.bkg-modal--ativo{
+    display: flex;
+}
+
 .modal__detalhes {
     display: flex;
     flex-direction: column;
@@ -146,8 +162,6 @@
     align-items: center;
     justify-content: center;
 }
-
-.modal__texto {}
 
 .modal__controle-unidade {
     background-color: #eeeeee;
