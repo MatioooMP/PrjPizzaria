@@ -1,10 +1,15 @@
 const botoesAdicionarPizza = document.querySelectorAll(".card__button-add");
 const botaoFecharJanela = document.querySelector(".botao-vermelho")
-const valorQuantPizza = document.getElementById(".modal__texto-quant");
-console.log(valorQuantPizza);
 const aumentarQuantPizza = document.querySelector(".add-pizza");
+const diminuirQuantPizza = document.querySelector(".remove-pizza");
 console.log(botoesAdicionarPizza);
-const modal = document.querySelector(".bkg-modal"); 
+const modal = document.querySelector(".bkg-modal");
+let quant = parseFloat(document.getElementById('modal__texto-quant').innerHTML);
+const botaoAdicionarAoCarrinho = document.querySelector('.modal__botao-adicionar');
+const tamanhoSelecionadoP = document.querySelector(".modal__tamanho-p");
+const tamanhoSelecionadoM = document.querySelector(".modal__tamanho-m");
+const tamanhoSelecionadoG = document.querySelector(".modal__tamanho-g");
+
 
 
 for (let i = 0; i < botoesAdicionarPizza.length; i++) {
@@ -19,6 +24,25 @@ botaoFecharJanela.addEventListener('click', () => {
 })
 
 aumentarQuantPizza.addEventListener('click', () => {
-    valorQuantPizza.innerHTML++;
+    quant = quant + 1;
+    document.getElementById('modal__texto-quant').innerHTML = quant;
 })
+
+
+diminuirQuantPizza.addEventListener('click', () => {
+    if (quant > 1) {
+        quant = quant - 1;
+        document.getElementById('modal__texto-quant').innerHTML = quant;
+    }
+})
+
+tamanhoSelecionadoP.addEventListener('click',()=>{
+    tamanhoSelecionadoP.classList.add("modal__tamanho-area--ativo");
+})
+
+
+
+
+
+
 
