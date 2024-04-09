@@ -6,9 +6,7 @@ console.log(botoesAdicionarPizza);
 const modal = document.querySelector(".bkg-modal");
 let quant = parseFloat(document.getElementById('modal__texto-quant').innerHTML);
 const botaoAdicionarAoCarrinho = document.querySelector('.modal__botao-adicionar');
-const tamanhoSelecionadoP = document.querySelector(".modal__tamanho-p");
-const tamanhoSelecionadoM = document.querySelector(".modal__tamanho-m");
-const tamanhoSelecionadoG = document.querySelector(".modal__tamanho-g");
+const tamanhosSelecionado = document.querySelectorAll(".modal__tamanho-area")
 
 
 
@@ -36,9 +34,9 @@ diminuirQuantPizza.addEventListener('click', () => {
     }
 })
 
-tamanhoSelecionadoP.addEventListener('click',()=>{
-    tamanhoSelecionadoP.classList.add("modal__tamanho-area--ativo");
-})
+// tamanhoSelecionadoP.addEventListener('click',()=>{
+//     tamanhoSelecionadoP.classList.add("modal__tamanho-area--ativo");
+// })
 
 
 

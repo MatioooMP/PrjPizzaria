@@ -372,3 +372,21 @@ main{
     font-size: 24px;
     color: black;
 }
+
+@media screen and (max-width: 440px){
+    .baixo{
+        padding: 32px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+    .rodape__redes-sociais{
+        order: -1;
+    }
+
+    .modal{
+        flex-direction: column;
+    }
+}
