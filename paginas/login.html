@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - JS Pizzarias</title>
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./../css/login.css">
+</head>
+<body>
+    
+    <header class="topo">
+        <h1 class="topo__marca">JS Pizzas <span class="topo__titulo">Menu</span></h1>
+    </header>
+
+
+    <main>
+        <form class="formulario" action="./login.php" method="post">
+            <label class="formulario_elemento" for="nome">Nome</label>
+            <input class="formulario_elemento" type="text" name="nomeUsuario" id="nome">
+            <label class="formulario_elemento" for="senha">Senha</label>
+            <input class="formulario_elemento" type="password" name="senhaUsuario" id="senha">
+            <input class="formulario_elemento botao botao-verde" type="submit" value="Logar">
+        </form>
+
+    </main>
+
+    <footer class="baixo">
+        <address class="baixo_address">Endereço: Rua das Margaridas,25<br> Centro São Paulo SP</address>
+
+        <div class="rodape__redes-sociais">
+            <span>Siga-nos nas redes:</span>
+            <div class="rodape__icones"></div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <span> Desenvolvido por Matiooo</span>
+    </footer>
+    
+</body>
+</html>
