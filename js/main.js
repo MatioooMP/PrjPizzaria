@@ -44,7 +44,7 @@ diminuirQuantPizza.addEventListener('click', () => {
 function RetirarTamanho(){
     for (let i = 0; i < botoesTamanhoSelecionado.length; i++) {
             tamanhoSelecionado[i].classList.remove("modal__tamanho-area--ativo");
-        }
+        }               
     }
 
 for (let i = 0; i < botoesTamanhoSelecionado.length; i++) {
