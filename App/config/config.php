@@ -2,7 +2,7 @@
 
 $db_host = 'localhost';
 $db_port = 3306;
-$db_name = "jspizzariadb";
+$db_name = "pizzaria";
 $db_user = 'matheus';
 $db_pwd = 'senac123';
 
